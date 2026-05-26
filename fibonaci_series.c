@@ -1,22 +1,14 @@
 #include <stdio.h>
 
 int main() {
-
-    int num = 192231;
-    int larg = 0;
-
-    int reverse = 0;
-
-    while(num > 0) {
-
-        int digit = num % 10;
-        if(digit>larg){
-            larg = digit;
-        }
-        
-        num = num / 10;
-    }
-   printf("%d",larg);
- 
-    return 0;
+int sum = 0;
+int  a = 0;
+int  b = 1;
+for(int i = 0 ;i<=5;i++){
+    sum = a + b;
+    printf(" \n %d",sum);
+    a = b;
+    b = sum;
+    
+}
 }
